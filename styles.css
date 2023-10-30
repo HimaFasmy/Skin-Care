@@ -79,7 +79,7 @@ body{
 
   .navbar .menu li {
     display: inline;
-    margin-right: 5px; /* Add some spacing between menu items */
+    margin-right: 2px; /* Add some spacing between menu items */
     
   }
 
@@ -110,7 +110,7 @@ body{
   background-color: #EEEAE1;
   width: 400px;
   position: relative;
-  font-family:  'Poppins-Regular', sans-serif;;
+  font-family:  'Poppins-Regular', sans-serif;
 }
 
 /* Style for the search icon */
@@ -135,13 +135,21 @@ body{
   border: none;
   background-color: transparent;
   outline: none;
+  font-size: 12;
+  font-family:  'Poppins-Regular', sans-serif;
 }
+
 
 .new{
   font-family:'Neucha-Regular'; 
   font-size: 72px;
   margin-left: 42%;
   margin-top: 10%;
+  -webkit-text-stroke: 1px transparent; /* Transparent outline (for WebKit browsers) */
+  text-stroke: 1px transparent; /* Transparent outline (for other browsers) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: -webkit-text-stroke 0.3s, text-stroke 0.3s;
 }
 
 .skin{
@@ -149,6 +157,16 @@ body{
   font-size: 150px;
   margin-left: 32%;
   margin-top: -8%;
+  -webkit-text-stroke: 1px transparent; /* Transparent outline (for WebKit browsers) */
+      text-stroke: 1px transparent; /* Transparent outline (for other browsers) */
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition: -webkit-text-stroke 0.3s, text-stroke 0.3s;
+}
+
+.new:hover, .skin:hover {
+  -webkit-text-stroke: 1px #FFD700; /* Gold outline on hover (for WebKit browsers) */
+  text-stroke: 1px #FFD700; /* Gold outline on hover (for other browsers) */
 }
 
 .left{
@@ -163,7 +181,7 @@ body{
 }
 
 .group{
-  margin-top: -42%;
+  margin-top: -41%;
   margin-left: 40%;
   font-family:'Neucha-Regular'; 
   font-size: 50px;
@@ -174,3 +192,24 @@ body{
   margin-left: 80%;
   margin-top: -500px;
 }
+
+.button1 {
+  padding: 10px 20px ;
+  background-color: #1C1B19; /* Background color for the button */
+  border: none;
+  color: #EEEAE1; /* Text color for the button */
+  margin-left: 45%;
+  margin-top: 35%;
+  height: 40px;
+  font-family:  'Poppins-Regular', sans-serif;
+  font-size: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Add a transition effect */
+}
+
+.button1:hover {
+background-color: #ffcd39; /* Change the background color on hover */
+color: #1C1B19; /* Change the text color on hover */
+box-shadow: 0 0 10px #ffcd39; /* Apply the glow effect on hover */
+}
+
