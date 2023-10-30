@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+
+
 /* Font*/
 @font-face {
   font-family: 'Poppins-Regular'; 
@@ -14,6 +16,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Neucha-Regular'; 
+  src: url('font/Neucha/Neucha-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 body{
   padding: 10px;
@@ -29,22 +39,34 @@ body{
   /* Style for the button */
  .button {
     float: right;
-    padding: 10px 20px;
+    padding: 10px 20px ;
     background-color: #EEEAE1; /* Background color for the button */
     border: none;
     color: #1C1B19; /* Text color for the button */
     margin-right: 5%;
-    margin-top: 10px;
+    margin-top: 14px;
     height: 40px;
     font-family:  'Poppins-Regular', sans-serif;
     font-size: 12px;
+    border-radius: 7px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Add a transition effect */
   }
+
+
+
+.button:hover {
+  background-color: #ffcd39; /* Change the background color on hover */
+  color: #1C1B19; /* Change the text color on hover */
+  box-shadow: 0 0 10px #ffcd39; /* Apply the glow effect on hover */
+}
+
 
   /* Style for the logo */
   .navbar .logo {
      float: left;
     padding: 20px;
     height: 30px;
+    width: 100px;
    
   }
 
@@ -68,4 +90,73 @@ body{
     padding-left: 30px;
     font-family:  'Poppins-Regular', sans-serif;
     font-size: 13px;
+    transition: color 0.3s, text-shadow 0.3s; /* Add a transition effect */
   }
+
+/* Apply the glow effect on hover */
+.navbar .menu li a:hover {
+  color: #ffcd39; /* Change the text color on hover */
+  text-shadow: 0 0 10px #ffcd39; /* Apply the glow effect on hover */
+}
+
+ /* Style for the search bar container */
+ .search-bar-container {
+  float: right;
+  margin-top: 22px;
+  margin-right: 33%; /* Adjust the right margin for spacing */
+  border: 1px solid #85837D;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #EEEAE1;
+  width: 400px;
+  position: relative;
+  font-family:  'Poppins-Regular', sans-serif;;
+}
+
+/* Style for the search icon */
+.search-icon::before {
+  content: "";
+  background-image: url('images/search.png'); /* Replace 'search-icon.png' with your icon's URL */
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/* Style for the search input */
+.search-input {
+  padding-left: 35px; /* Adjust left padding for the icon */
+  width: 100%; /* Adjust the width of the input field */
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.new{
+  font-family:'Neucha-Regular'; 
+  font-size: 72px;
+  margin-left: 42%;
+  margin-top: 10%;
+}
+
+.skin{
+  font-family:'Neucha-Regular'; 
+  font-size: 150px;
+  margin-left: 32%;
+  margin-top: -8%;
+}
+
+.left{
+  margin-top: -10%;
+}
+
+.hero{
+  margin-left: 30%;
+  width: 400px;
+  height: 500px;
+}
