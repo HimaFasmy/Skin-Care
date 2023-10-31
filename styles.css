@@ -16,6 +16,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Poppins-Black'; 
+  src: url('font/Poppins fonts/Poppins-Black.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Italic'; 
+  src: url('font/Poppins fonts/Poppins-Italic.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Neucha-Regular'; 
   src: url('font/Neucha/Neucha-Regular.ttf') format('truetype'); 
@@ -49,7 +62,8 @@ body{
     font-family:  'Poppins-Regular', sans-serif;
     font-size: 12px;
     border-radius: 7px;
-    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Add a transition effect */
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    cursor: pointer; /* Add a transition effect */
   }
 
 
@@ -171,6 +185,10 @@ body{
 
 .left{
   margin-top: -20%;
+  transition: transform 0.3s;
+}
+.left:hover {
+  transform: translateY(-10px); /* Apply a vertical translation on hover */
 }
 
 .hero{
@@ -178,8 +196,11 @@ body{
   width: 400px;
   height: 500px;
   margin-top: -25%; 
+  transition: transform 0.3s;
 }
-
+.hero:hover {
+  transform: translateY(-20px); /* Apply a vertical translation on hover */
+}
 .group{
   margin-top: -41%;
   margin-left: 40%;
@@ -191,6 +212,11 @@ body{
 .right{
   margin-left: 80%;
   margin-top: -500px;
+  transition: transform 0.3s;
+}
+
+.right:hover {
+  transform: translateY(-10px); /* Apply a vertical translation on hover */
 }
 
 .button1 {
@@ -204,7 +230,8 @@ body{
   font-family:  'Poppins-Regular', sans-serif;
   font-size: 10px;
   border-radius: 20px;
-  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Add a transition effect */
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; 
+  cursor: pointer;/* Add a transition effect */
 }
 
 .button1:hover {
@@ -212,4 +239,128 @@ background-color: #ffcd39; /* Change the background color on hover */
 color: #1C1B19; /* Change the text color on hover */
 box-shadow: 0 0 10px #ffcd39; /* Apply the glow effect on hover */
 }
+
+
+.box{
+ background-color: #1C1B19; 
+ height: 400px;
+ padding-top: 2px;
+ padding-bottom: 50px;
+ margin-top: 10%;
+ border-radius: 20px;
+}
+.container {
+  border: 0.5px solid #1C1B19; /* Border style for the container */
+  padding: 20px;
+  width: 400px;
+  transform: skewY(8deg); /* Apply a skew effect */
+  background-color: #EEEAE1;
+  height: 220px;
+  border-radius: 20px;
+  margin-left: 35%;
+  margin-top: 8%;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  animation: shake 0.3s ease infinite; /* Apply the shake animation on hover */
+}
+
+@keyframes shake {
+  0% {
+    transform: skewY(8deg); /* Initial position */
+  }
+  25% {
+    transform: skewY(12deg); /* Shake to the right */
+  }
+  50% {
+    transform: skewY(8deg); /* Return to the center */
+  }
+  75% {
+    transform: skewY(4deg); /* Shake to the left */
+  }
+  100% {
+    transform: skewY(8deg); /* Return to the center */
+  }
+}
+
+.title {
+  font-family:'Neucha-Regular';  /* Specify the font for the title */
+  font-size: 40px;
+  margin: 0;
+  color: #1C1B19; /* Text color for the title */
+  word-spacing: 20px;
+  margin-left: 23%;
+}
+
+.text {
+  font-family: 'Poppins-Black', sans-serif;
+  font-weight: bold; /* Specify the font for the text */
+  font-size: 13px;
+  color:#1C1B19 ;
+  margin-left: 18%; /* Text color for the text */
+}
+
+.text1 {
+  font-family: 'Poppins-Black', sans-serif;
+  font-weight: bold; /* Specify the font for the text */
+  font-size: 20px;
+  color:#1C1B19 ;
+  margin-left: 24%; /* Text color for the text */
+  margin-top:15% ;
+}
+
+.button2{
+  margin-left: 40%;
+  background-color: #1C1B19;
+  border-radius: 50%;
+  height: 40px;
+  width: 43px;
+  border: none;
+  margin-top: -50%;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; 
+  cursor: pointer;
+  color: #EEEAE1;
+}
+
+.button2:hover {
+  background-color: #ffcd39; /* Change the background color on hover */
+  color: #1C1B19; /* Change the text color on hover */
+  box-shadow: 0 0 10px #ffcd39; /* Apply the glow effect on hover */
+}
+
+.pics{
+  width: 1000px;
+}
+
+.best{
+  margin-left: 30%;
+  margin-top: 5%;
+  font-family:'Neucha-Regular';  /* Specify the font for the title */
+  font-size: 70px;
+  color: #1C1B19; /* Text color for the title */
+}
+.msg{
+  margin-left: 32%;
+  width: 500px;
+  margin-top: -5%;
+  font-family: 'Poppins-Regular', sans-serif;
+ 
+}
+
+.small{
+  width:400px;
+  height: 500px;
+  margin-left: 17%;
+  margin-top: 3%;
+}
+
+.small1{
+  width:400px;
+  height: 500px;
+  margin-left: 55%;
+  margin-top: -10%px;
+}
+
+
 
