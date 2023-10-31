@@ -185,22 +185,16 @@ body{
 
 .left{
   margin-top: -20%;
-  transition: transform 0.3s;
 }
-.left:hover {
-  transform: translateY(-10px); /* Apply a vertical translation on hover */
-}
+
 
 .hero{
   margin-left: 35%;
   width: 400px;
   height: 500px;
   margin-top: -25%; 
-  transition: transform 0.3s;
 }
-.hero:hover {
-  transform: translateY(-20px); /* Apply a vertical translation on hover */
-}
+
 .group{
   margin-top: -41%;
   margin-left: 40%;
@@ -209,15 +203,11 @@ body{
   font-weight: bold;
 }
 
-.right{
+.right1{
   margin-left: 80%;
   margin-top: -500px;
-  transition: transform 0.3s;
 }
 
-.right:hover {
-  transform: translateY(-10px); /* Apply a vertical translation on hover */
-}
 
 .button1 {
   padding: 10px 20px ;
@@ -353,14 +343,27 @@ box-shadow: 0 0 10px #ffcd39; /* Apply the glow effect on hover */
   height: 500px;
   margin-left: 17%;
   margin-top: 3%;
+  transition: transform 0.3s;
 }
 
 .small1{
   width:400px;
   height: 500px;
   margin-left: 55%;
-  margin-top: -10%px;
+  margin-top: -30%;
+  transition: transform 0.3s;
+  
 }
 
+.big{
+  width: 500px;
+  height: 400px;
+  margin-left: 13%;
+  margin-top: -4%;
+  transition: transform 0.3s;
+}
 
+.big:hover, .small:hover, .small1:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
 
